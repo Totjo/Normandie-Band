@@ -1,0 +1,692 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,500;1,700&family=Playfair+Display:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    /* background-image: url(../img/back.png); */
+    background-attachment: fixed;
+    background-color: #E7E7E7;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h1{
+    margin: 0;
+    color: #EA9405;
+}
+
+h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 4em;
+    margin: 0;
+    padding-bottom: 0.5em;
+    color: #EA9405;
+}
+
+h3{
+    font-size: 1.5em;
+    margin-bottom: 2em;
+}
+
+ul li{
+    display: flex;
+    flex-direction: row;
+}
+
+.normandie{
+    font-family: 'Poppins', sans-serif;
+    color: #EA9405;
+}
+
+.container{
+    margin: auto;
+    width: 80vmax;
+    /* background-color: blue; */
+    margin-top: 5em;
+}
+
+.active{
+    color: #EA9405;
+}
+
+#active{
+    color: #EA9405;
+}
+
+section .boutonblack{
+    background-color: black;
+    font-weight: 600;
+    color: white;
+    padding: 2em;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    border: solid black 1px;
+    border-radius: 5px;
+    font-size: 1.2vw;
+    transition: all 0.5s;
+}
+
+section .boutonblack:hover{
+    background-color: #EA9405;
+    color: black;
+    border: solid black 1px;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+section .boutonorange{
+    background-color: #EA9405;
+    font-weight: 600;
+    color: black;
+    white-space: nowrap;
+    padding: 2em;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    border: solid black 1px;
+    border-radius: 5px;
+    font-size: 1.2vw;
+    transition: all 0.5s;
+}
+
+section .boutonorange:hover{
+    background-color: black;
+    color: white;
+    border: solid black 1px;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+/* HEADER */
+
+header{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header ul li{
+    margin-right: 0.8em;
+    margin-left: 0.8em;
+}
+
+header nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+header a{
+    color: white;
+    transition: all 0.5s;
+}
+
+header a:hover{
+    color: #EA9405;
+    transition: all 0s;
+}
+
+header .boutonblack{
+    background-color: black;
+    color: white;
+    margin-left: 2.5em;
+    padding: 1.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border: solid white 1px;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+header .boutonblack:hover{
+    background-color: black;
+    color: #EA9405;
+    border: solid #EA9405 1px;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+header .menumusic{
+    position: relative;
+}
+
+header .deroulant{
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 0;
+    padding-left: 0;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 0.5s ease-out;
+}
+
+header .menumusic:hover .deroulant{
+    display: block;
+    max-height: 500px;
+    transition: all 1.2s ease-out;
+}
+
+header .deroulant li{
+    padding: 0.5em;
+    width: 14em;
+    margin-left: 0.5em;
+    margin-right: 0;
+}
+
+/* SECTION */
+
+/* HOME */
+
+#home .first{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* background-color: brown; */
+}
+
+#home .first .txt{
+    padding-right: 0;
+    padding-top: 0;
+}
+
+#home .first img{
+    width: 70vmin;
+    height: 50vmin;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+#home .first div{
+    padding: 5em;
+    padding-right: 0;
+    padding-bottom: 1em;
+}
+
+#home .third{
+    padding: 10em;
+    text-align: center;
+}
+
+#home svg{
+    padding-right: 1em;
+    height: auto;
+    width: 10vmin;
+}
+
+#home .social a{
+    opacity: 80%;
+    transition: all 0.5s ease-out;
+}
+
+#home .social a:hover{
+    opacity: 100%;
+    transition: all 0s;
+}
+
+#home .second{
+    margin-top: 10em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#home .second .newalbum div{
+    background-image: url(../img/cover_dark&beautifulsecrets.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    width: 50vmin;
+    height: 50vmin;
+}
+
+#home .second .newalbum{
+    background-color: rgba(0, 0, 0, 0.082);
+    padding: 5em;
+    border-radius: 10px;
+}
+
+#home .second .txt{
+    margin-left: 10em;
+}
+
+/* MUSIC */
+
+#music .first{
+    margin-top: 10em;
+}
+
+#music .first h2{
+    text-align: center;
+}
+
+#music .first h3{
+    margin: 0;
+    font-size: 2vh;
+}
+
+#music .first .ligne1, #music .first .ligne2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5em;
+}
+
+#music .first .ligne1 .album, #music .first .ligne2 .album{
+    margin: 1em;
+    margin-bottom: 1em;
+    margin-top: 0;
+}
+
+#music .first .covertxt{
+    background-color: white;
+    padding: 1em;
+}
+
+#music .first svg{
+    width: 3.5vh;
+    height: auto;
+    margin-top: 2em;
+}
+
+#music .first .aspotify{
+    margin-left: 28vmin;
+}
+
+#music .covertxt a{
+    opacity: 80%;
+    transition: all 0.5s ease-out;
+}
+
+#music .covertxt a:hover{
+    opacity: 100%;
+    transition: all 0s;
+}
+
+#music .first .dark{
+    background-image: url(../img/cover_dark&beautifulsecrets.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40vh;
+    height: 40vh;
+}
+
+#music .first .whiteflag{
+    background-image: url(../img/cover_whiteflag.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40vh;
+    height: 40vh;
+}
+
+#music .first .inguzdelux{
+    background-image: url(../img/cover_inguz_delux.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40vh;
+    height: 40vh;
+}
+
+#music .first .pay{
+    background-image: url(../img/cover_payforthis.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40vh;
+    height: 40vh;
+}
+
+#music .first .ghost{
+    background-image: url(../img/cover_ghost.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40vh;
+    height: 40vh;
+}
+
+#music .first .inguz{
+    background-image: url(../img/cover_inguz.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40vh;
+    height: 40vh;
+}
+
+#music .first .ligne2{
+    margin-bottom: 5em;
+}
+
+#music .second{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#music .spotifysection{
+    display: flex;
+    flex-direction: column;
+}
+
+#music .second .spotifysection{
+    margin-right: 4em;
+    margin-top: 0;
+    margin-bottom: 10em;
+    margin-left: 0;
+}
+
+#music .second .sub{
+    margin-bottom: 3em;
+    margin-top: 2em;
+}
+
+#music .second .playlist{
+    height: 50vmin;
+}
+
+#music .second .youtubesection{
+    margin-left: 4em;
+    margin-top: 0;
+    margin-bottom: 10em;
+    margin-right: 0;
+}
+
+#music .second .youtubesection iframe{
+    margin-top: 1em;
+    width: 80vmin;
+    height: 50vmin;
+}
+
+/* OUR STORY */
+
+#ourstory .first{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    /* background-color: brown; */
+}
+
+#ourstory .first .txt{
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    width: 25em;
+    height: 25em;
+}
+
+#ourstory .first img{
+    width: 70vmin;
+    height: 50vmin;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+#ourstory .first div{
+    padding: 5em;
+    padding-left: 0;
+    padding-bottom: 1em;
+}
+
+#ourstory .second{
+    margin-top: 5em;
+}
+
+#ourstory .second .group{
+    width: 80vmin;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 2em;
+}
+
+#ourstory .second img{
+    width: 35vmin;
+    height: 35vmin;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+#ourstory .members{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#ourstory .member{
+    background-color: white;
+    border-radius: 10px;
+    margin: 1em;
+}
+
+#ourstory .second h3{
+    margin-bottom: 0;
+}
+
+#ourstory .second p{
+    margin-top: 0;
+}
+
+#ourstory .second .infomember{
+    padding: 1em;
+    padding-top: 0;
+    font-size: 1.7vmin;
+}
+
+#ourstory .second a{
+    margin-left: 12.5em;
+    font-weight: bold;
+    transition: all 0.5s ease-out;
+}
+
+#ourstory .second a:hover{
+    font-weight: bold;
+    color: #EA9405;
+    transition: all 0s;
+}
+
+#ourstory .third{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5em;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#ourstory .third div{
+    padding: 5em;
+    margin-top: 3em;
+}
+
+#ourstory .third iframe{
+    width: 70vmin;
+    height: 30vmin;
+}
+
+#ourstory .third .map{
+    background-color: white;
+    padding: 0.5em;
+    border-radius: 10px;
+}
+
+#ourstory .third .txtmap{
+    padding-left: 0;
+    padding-bottom: 0;
+}
+
+/* DATE */
+
+#date h1{
+    font-size: 3em;
+}
+
+#date .first{
+    margin-top: 5em;
+    height: auto;
+}
+
+#date .first .position{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 5em;
+    font-size: 0.8vw;
+}
+
+#date .russia, #date .euuk{
+    margin-top: 5em;
+}
+
+#date .first .concert{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid black 1px;
+    margin-top: 2em;
+    margin-left: 5em;
+    width: 80em;
+}
+
+#date .first .concert div{
+    margin-bottom: 0.5em;
+    margin-right: 2em;
+    margin-left: 0.5em;
+}
+
+#date .day{
+    font-weight: bold;
+    font-size: 2.5em;
+    width: 3em;
+    text-align: center;
+}
+
+#date span{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#date .festival{
+    font-weight: bold;
+    font-size: 1.5em;
+    width: 15em;
+}
+
+#date .place{
+    width: 15em;
+}
+
+
+
+/* FOOTER */
+
+footer .representation a, footer .special a{
+    color: black;
+    transition: all 0.5s ease-out;
+}
+
+footer .representation a:hover, footer .special a:hover{
+    color: #EA9405;
+    transition: all 0s;
+}
+
+footer .social a{
+    opacity: 80%;
+    transition: all 0.5s ease-out;
+}
+
+footer .social a:hover{
+    opacity: 100%;
+    transition: all 0s;
+}
+
+footer .pied{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5vmin;
+    padding: 5em;
+    padding-right: 0;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(212, 212, 212);
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+footer .normandie{
+    color: black;
+    margin-left: 0;
+}
+
+footer .left{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .right{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.special{
+    width: 12vmax;
+}
+
+.terms{
+    padding-top: 2em;
+    width: max-content;
+}
+
+.who{
+    padding-top: 1.5em;
+    width: 30vmax;
+}
+
+footer div{
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+footer svg{
+    height: auto;
+    width: 2.5em;
+}
+
+.representationall{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.representation1{
+    padding-left: 0;
+}
+
+.representation2{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.rightall{
+    border-left: solid 2px black;
+}
